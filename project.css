@@ -18,10 +18,6 @@ img {
     height: 20px;
 }
 
-.drupal_development h1{
-
-}
-
 .btn {
     display: inline-block;
     color: #fff;
@@ -31,12 +27,18 @@ img {
     border-color: coral;
    }
 
-.ebuchie_achivments {
 
-}
 
 .header_content{
     max-width: 850px;
+}
+
+.header_logo {
+    height: 400px;
+    position: absolute;
+    top: -150px;
+    left: 0;
+    z-index: -1;
 }
 
 /* background video */
@@ -52,7 +54,7 @@ img {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: -1;
+    z-index: -10;
     filter: blur(5px);
     filter: brightness(25%);
 }
