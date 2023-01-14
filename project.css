@@ -40,6 +40,7 @@ img {
 }
 
 /* background video */
+
 .header_block {
     overflow: hidden;
     position: relative;
@@ -58,6 +59,7 @@ img {
 }
 
 /* Dropdown menu */
+
 .dropdown {
     position: relative;
     display: inline-block;
@@ -82,13 +84,14 @@ img {
 
 /* Achivment */
 
-.achivment_wrapper{
+.achivment_wrapper {
     border-left-style: solid;
     border-left-color: coral;
     border-left-width: 2px;
     margin: 3px;
 }
-.achivment_title{
+
+.achivment_title {
     font-size: 15px;
 }
 
