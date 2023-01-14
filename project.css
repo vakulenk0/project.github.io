@@ -8,6 +8,10 @@ body {
 
 /* ---------------------------------HEADER--------------------------------- */
 
+.header_content {
+    max-width: 850px;
+}
+
 header,
 .nav_bar a {
     font-size: 10px;
@@ -25,12 +29,6 @@ img {
     text-decoration: none;
     border-radius: 5px;
     border-color: coral;
-   }
-
-
-
-.header_content{
-    max-width: 850px;
 }
 
 .header_logo {
@@ -48,7 +46,7 @@ img {
     height: 100%;
     width: 100%;
 }
- 
+
 .header_video {
     position: absolute;
     top: 0;
@@ -58,7 +56,6 @@ img {
     filter: blur(5px);
     filter: brightness(25%);
 }
-
 
 /* Dropdown menu */
 .dropdown {
@@ -83,9 +80,21 @@ img {
     display: block;
 }
 
+/* Achivment */
+
+.achivment_wrapper{
+    border-left-style: solid;
+    border-left-color: coral;
+    border-left-width: 2px;
+    margin: 3px;
+}
+.achivment_title{
+    font-size: 15px;
+}
+
 
 /* ---------------------------------MAIN--------------------------------- */
 
-main{
+main {
     width: 100%;
 }
