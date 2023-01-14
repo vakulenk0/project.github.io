@@ -87,3 +87,14 @@ img {
 main{
     width: 100%;
 }
+
+.help {
+    width: 1082px;
+    height: 716px;
+    border: solid 1px;
+}
+
+.divHelp1 {
+    height: 280px;
+    width: 50%;
+}
