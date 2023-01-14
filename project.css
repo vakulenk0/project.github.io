@@ -89,18 +89,3 @@ img {
 main{
     width: 100%;
 }
-.test{
-    width: 100%;
-    height: 500px;
-    background-color: rgb(255, 255, 255);
-}
-.test2{
-    width: 100%;
-    height: 500px;
-    background-color: rgb(47, 0, 255);
-}
-.test3{
-    width: 100%;
-    height: 500px;
-    background-color: rgb(255, 0, 0);
-}
