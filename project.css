@@ -8,6 +8,10 @@ body {
 
 /* ---------------------------------HEADER--------------------------------- */
 
+.header_content {
+    max-width: 850px;
+}
+
 header,
 .nav_bar a {
     font-size: 10px;
@@ -18,10 +22,6 @@ img {
     height: 20px;
 }
 
-.drupal_development h1{
-
-}
-
 .btn {
     display: inline-block;
     color: #fff;
@@ -29,14 +29,14 @@ img {
     text-decoration: none;
     border-radius: 5px;
     border-color: coral;
-   }
-
-.ebuchie_achivments {
-
 }
 
-.header_content{
-    max-width: 850px;
+.header_logo {
+    height: 400px;
+    position: absolute;
+    top: -150px;
+    left: 0;
+    z-index: -1;
 }
 
 /* background video */
@@ -46,17 +46,16 @@ img {
     height: 100%;
     width: 100%;
 }
- 
+
 .header_video {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: -1;
+    z-index: -10;
     filter: blur(5px);
     filter: brightness(25%);
 }
-
 
 /* Dropdown menu */
 .dropdown {
@@ -81,10 +80,22 @@ img {
     display: block;
 }
 
+/* Achivment */
+
+.achivment_wrapper{
+    border-left-style: solid;
+    border-left-color: coral;
+    border-left-width: 2px;
+    margin: 3px;
+}
+.achivment_title{
+    font-size: 15px;
+}
+
 
 /* ---------------------------------MAIN--------------------------------- */
 
-main{
+main {
     width: 100%;
 }
 
@@ -98,3 +109,4 @@ main{
     height: 280px;
     width: 50%;
 }
+
