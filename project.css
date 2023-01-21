@@ -31,6 +31,10 @@ img {
     border-color: coral;
 }
 
+.btn:hover {
+    background-color: coral;
+}
+
 .header_logo {
     height: 400px;
     position: absolute;
@@ -113,3 +117,35 @@ main {
     width: 50%;
 }
 
+
+/* tariff */
+.tariff {
+    width: 100%;
+    height: 720px;
+
+}
+
+.panel {
+    border-style: solid;
+    border-color: rgb(143, 143, 143);
+    border-width: 1px;
+    background-color: #ebebeb;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.panel:hover {
+    transform: scale(1.1);
+    background-color: #ffffff;
+}
+
+.panel h3 {
+    border-bottom-style: solid;
+    border-color: rgb(53, 51, 50);
+    border-width: 2px;
+}
+
+.panel .btn {
+    color:black;
+}
