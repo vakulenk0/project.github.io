@@ -21,8 +21,8 @@ header,
     color: rgb(255, 255, 255);
 }
 
-img {
-    height: 20px;
+.achivment_title img {
+    width: 20px;
 }
 
 .btn {
@@ -39,10 +39,10 @@ img {
 }
 
 .header_logo {
-    height: 400px;
+    height: 600px;
     position: absolute;
-    top: -150px;
-    left: 0;
+    top: -200px;
+    left: -200px;
     z-index: -1;
 }
 
@@ -187,22 +187,11 @@ main {
 
 
 /* tariff */
-.content {
-    max-width: 850px;
-    width: 100%;
-    position: relative;
+
+.tariff_header {
+    font-weight: bold;
+    text-align: center;
 }
-
-.tariff_block {
-
-}
-
-
-.tariff_block .content{
-    height: 600px;
-    opacity: 200%;
-}
-
 
 .tariff_back {
     position: absolute;
@@ -213,32 +202,95 @@ main {
     opacity: 50%;
 }
 
-.panel {
+.tariff_panel {
+    max-width: 370px;
     border-style: solid;
-    border-color: rgb(143, 143, 143);
     border-width: 1px;
-    background-color: #ebebeb;
-    padding: 10px;
-    margin: 10px;
     border-radius: 5px;
     transition: transform .2s;
-}
-
-.panel:hover {
-    transform: scale(1.1);
     background-color: #ffffff;
 }
 
-.panel h3 {
+.tariff_panel ul {
+    padding-left: 20px;
+}
+
+.tariff_panel li {
+    margin-bottom: 10px;
+}
+
+.tariff_panel:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 60px rgb(162 162 162 / 25%);
+    background-color: #ffffff;
+
+}
+
+.tariff_panel:hover .btn {
+    background-color: coral;
+}
+
+.tariff_panel h3 {
     border-bottom-style: solid;
     border-color: rgb(53, 51, 50);
     border-width: 2px;
+
 }
 
-.panel .btn {
+.tariff_panel .btn {
     color:black;
+}
+
+.tariff_content {
+    padding: 30px 20px;
 }
 
 .tariff_dop {
     font-size: small;
+}
+
+.tariff_content_header {
+    margin: 30px 0;
+}
+
+.tariff_wrapper {
+    margin: 10px 0;
+}
+
+.tariff_block {
+    background: url(img/D-background-opacity.svg) no-repeat right top,#fff;
+    background-size: contain;
+}
+/* ourDev */
+
+/* team */
+.team_header {
+    font-weight: bold;
+    text-align: center;
+}
+
+.team_block h5 {
+    font-weight: 1000;
+}
+
+.team_block .btn {
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    border-color: gray;
+}
+
+.team_photo {
+    height: auto;
+    width: auto;
+    max-width: 280px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.team_panel {
+    padding: 0 45px;
+    margin-bottom: 20px;
 }
