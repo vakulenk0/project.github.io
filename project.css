@@ -4,11 +4,6 @@ body {
     font-family: "Montserrat";
 }
 
-.content {
-    max-width: 850px;
-    width: 100%;
-    position: relative;
-}
 
 
 
@@ -17,7 +12,7 @@ body {
 
 header,
 .nav_bar a {
-    font-size: 10px;
+    font-weight: bold;
     color: rgb(255, 255, 255);
 }
 
@@ -39,11 +34,46 @@ header,
 }
 
 .header_logo {
-    height: 600px;
+    height: 700px;
     position: absolute;
     top: -200px;
     left: -200px;
     z-index: -1;
+}
+
+/* mobile nav bar */
+
+.mobileNavBar_block button {
+    background-color: transparent;
+    color: #151618;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: bold;
+    width: 50px;
+    height: 100%;
+}
+
+
+.mobileNavBar_block {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgb(58, 58, 58);
+    display: none;
+}
+
+@media screen and (max-width: 575px) {
+    .navBar_block {
+        display: none;
+    }
+
+    .mobileNavBar_block {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 /* background video */
@@ -51,15 +81,19 @@ header,
 .header_block {
     overflow: hidden;
     position: relative;
-    height: 100%;
     width: 100%;
 }
 
 .header_video {
+    object-fit: cover;
     position: absolute;
     top: 0;
+    right: 0;
     left: 0;
-    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    display: inline-block;
+    vertical-align: baseline;
     z-index: -10;
     filter: blur(5px);
     filter: brightness(25%);
@@ -83,6 +117,7 @@ header,
 
     padding: 0 5px;
     display: block;
+    color: black;
 }
 
 .dropdown:hover .dropdown-content {
@@ -118,6 +153,7 @@ main {
 .element-support {
     width: 24%;
 }
+
 .help {
     width: 90%;
     position: relative;
@@ -130,6 +166,7 @@ main {
 .support-services {
     width: 90%;
 }
+
 .help-services {
     width: 100%;
 }
@@ -142,7 +179,7 @@ main {
     margin-bottom: 20px;
 }
 
-.element-line-support{
+.element-line-support {
     height: 250px;
 }
 
@@ -293,7 +330,7 @@ main {
 }
 
 .tariff_panel .btn {
-    color:black;
+    color: black;
 }
 
 .tariff_content {
@@ -313,9 +350,10 @@ main {
 }
 
 .tariff_block {
-    background: url(img/D-background-opacity.svg) no-repeat right top,#fff;
+    background: url(img/D-background-opacity.svg) no-repeat right top, #fff;
     background-size: cover;
 }
+
 /* ourDev */
 
 /* team */
