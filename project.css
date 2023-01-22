@@ -242,3 +242,28 @@ main {
 .tariff_dop {
     font-size: small;
 }
+
+/*-------------------FOOTER-----------------------*/
+footer{
+    background-color: #394047;
+    color:#ffffff;
+}
+footer a{
+    color: orangered;
+}
+
+.support_text{
+    font-weight: 900;
+    font-size: 35px;
+}
+.support_text2{
+    margin-bottom: 120px;
+}
+.lower_part{
+  
+    margin-top: 20px;
+}
+.liner{
+    border-top: 1px solid black;
+    margin-top: 10px;
+}
