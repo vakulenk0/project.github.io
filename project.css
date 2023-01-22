@@ -102,22 +102,87 @@ img {
     font-size: 15px;
 }
 
-
-/* ---------------------------------MAIN--------------------------------- */
-
 main {
     width: 100%;
 }
 
+/* Support, help, expertixe */
+.support {
+    width: 90%;
+    max-height: 1000px;
+    padding-top: 100px;
+    margin-bottom: 100px;
+}
+
 .help {
-    width: 1082px;
-    height: 716px;
-    border: solid 1px;
+    width: 90%;
+}
+
+.divSupport1 {
+    width: 50%;
+}
+
+.support-services {
+    width: 90%;
+}
+.help-services {
+    width: 100%;
+}
+
+.image-support {
+    margin-bottom: 30px;
+}
+
+.element-support{
+    height: 220px;
+    width: 18%;
+}
+
+.element-help {
+    max-height: 260px;
+    width: 24.5%;
+    margin-bottom: 5px;
+}
+
+.element-line-support{
+    height: 250px;
+}
+
+.element-line-help {
+    height: 250px;
+    margin-bottom: 70px;
 }
 
 .divHelp1 {
-    height: 280px;
-    width: 50%;
+    align-self: center;
+}
+
+.number {
+    color: gray;
+    margin-bottom: 14px;
+}
+
+.help-titles {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.text-help {
+    font-size: 15px;
+}
+
+.image-help {
+    height: 74px;
+    width: 74px;
+    position: relative;
+    left: 64%;
+}
+
+.expertise {
+    background-color: #394047;
+    height: 839px;
+    width: auto;
 }
 
 
