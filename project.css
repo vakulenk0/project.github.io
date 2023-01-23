@@ -4,11 +4,6 @@ body {
     font-family: "Montserrat";
 }
 
-.content {
-    max-width: 850px;
-    width: 100%;
-    position: relative;
-}
 
 
 
@@ -17,12 +12,12 @@ body {
 
 header,
 .nav_bar a {
-    font-size: 10px;
+    font-weight: bold;
     color: rgb(255, 255, 255);
 }
 
-img {
-    height: 20px;
+.achivment_title img {
+    width: 20px;
 }
 
 .btn {
@@ -39,11 +34,46 @@ img {
 }
 
 .header_logo {
-    height: 400px;
+    height: 700px;
     position: absolute;
-    top: -150px;
-    left: 0;
+    top: -200px;
+    left: -200px;
     z-index: -1;
+}
+
+/* mobile nav bar */
+
+.mobileNavBar_block button {
+    background-color: transparent;
+    color: #151618;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: bold;
+    width: 50px;
+    height: 100%;
+}
+
+
+.mobileNavBar_block {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgb(58, 58, 58);
+    display: none;
+}
+
+@media screen and (max-width: 575px) {
+    .navBar_block {
+        display: none;
+    }
+
+    .mobileNavBar_block {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 /* background video */
@@ -51,15 +81,19 @@ img {
 .header_block {
     overflow: hidden;
     position: relative;
-    height: 100%;
     width: 100%;
 }
 
 .header_video {
+    object-fit: cover;
     position: absolute;
     top: 0;
+    right: 0;
     left: 0;
-    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    display: inline-block;
+    vertical-align: baseline;
     z-index: -10;
     filter: blur(5px);
     filter: brightness(25%);
@@ -83,6 +117,7 @@ img {
 
     padding: 0 5px;
     display: block;
+    color: black;
 }
 
 .dropdown:hover .dropdown-content {
@@ -107,6 +142,7 @@ main {
 }
 
 /* Support, help, expertixe */
+
 .support {
     width: 90%;
     max-height: 1000px;
@@ -114,8 +150,19 @@ main {
     margin-bottom: 100px;
 }
 
+.text-sup {
+    font-size: 42px;
+}
+
+
+
+.element-support {
+    width: 24%;
+}
+
 .help {
     width: 90%;
+    position: relative;
 }
 
 .divSupport1 {
@@ -124,7 +171,9 @@ main {
 
 .support-services {
     width: 90%;
+    flex-direction: column;
 }
+
 .help-services {
     width: 100%;
 }
@@ -133,25 +182,14 @@ main {
     margin-bottom: 30px;
 }
 
-.element-support{
-    height: 220px;
-    width: 18%;
+.help-header {
+    margin-bottom: 20px;
 }
 
-.element-help {
-    max-height: 260px;
-    width: 24.5%;
-    margin-bottom: 5px;
-}
-
-.element-line-support{
+.element-line-support1, .element-line-support2{
     height: 250px;
 }
 
-.element-line-help {
-    height: 250px;
-    margin-bottom: 70px;
-}
 
 .divHelp1 {
     align-self: center;
@@ -159,50 +197,101 @@ main {
 
 .number {
     color: gray;
-    margin-bottom: 14px;
+    margin-bottom: 8px;
 }
 
 .help-titles {
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 15px;
+    width: auto;
+}
+
+.help-title {
+    font-weight: bold;
 }
 
 .text-help {
-    font-size: 15px;
-}
-
-.image-help {
-    height: 74px;
-    width: 74px;
-    position: relative;
-    left: 64%;
+    font-size: 13px;
+    margin: 0;
+    max-height: 100px;
 }
 
 .expertise {
     background-color: #394047;
-    height: 839px;
+    height: 100vh;
     width: auto;
+    margin-top: -220px;
 }
+
+.element-line-support {
+    max-height: 250px;
+}
+
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.col-help {
+    margin-bottom: 5px;
+}
+
+.element-help {
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 20px 20px 40px rgb(5 12 51 / 5%);
+    margin-left: -12px;
+    margin-right: -12px;
+    height: 100%;
+    position: relative;
+    padding: 25px 25px 45px;
+    min-height: 292px;
+    z-index: 0;
+}
+
+.img-help {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.div1-expertise {
+    max-width: 600px;
+    max-height: 600px;
+}
+
+.div2-expertise {
+    width: 65%;
+    margin-top: 200px;
+}
+
+.wrapper-expertise {
+    height: 100%;
+}
+
+.empty-div {
+    height: 35%;
+}
+
+.div1-expertise img {
+    width: 100%;
+    height: auto;
+    margin-top: 150px;
+}
+
+
+
+/* Support, help, expertixe  end*/
 
 
 /* tariff */
-.content {
-    max-width: 850px;
-    width: 100%;
-    position: relative;
+
+.tariff_header {
+    font-weight: bold;
+    text-align: center;
 }
-
-.tariff_block {
-
-}
-
-
-.tariff_block .content{
-    height: 600px;
-    opacity: 200%;
-}
-
 
 .tariff_back {
     position: absolute;
@@ -213,57 +302,49 @@ main {
     opacity: 50%;
 }
 
-.panel {
+.tariff_panel {
+    max-width: 370px;
     border-style: solid;
-    border-color: rgb(143, 143, 143);
     border-width: 1px;
-    background-color: #ebebeb;
-    padding: 10px;
-    margin: 10px;
     border-radius: 5px;
     transition: transform .2s;
-}
-
-.panel:hover {
-    transform: scale(1.1);
     background-color: #ffffff;
 }
 
-.panel h3 {
+.tariff_panel ul {
+    padding-left: 20px;
+}
+
+.tariff_panel li {
+    margin-bottom: 10px;
+}
+
+.tariff_panel:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 60px rgb(162 162 162 / 25%);
+    background-color: #ffffff;
+
+}
+
+.tariff_panel:hover .btn {
+    background-color: coral;
+}
+
+.tariff_panel h3 {
     border-bottom-style: solid;
     border-color: rgb(53, 51, 50);
     border-width: 2px;
+
 }
 
-.panel .btn {
-    color:black;
+.tariff_panel .btn {
+    color: black;
+}
+
+.tariff_content {
+    padding: 30px 20px;
 }
 
 .tariff_dop {
     font-size: small;
-}
-
-/*-------------------FOOTER-----------------------*/
-footer{
-    background-color: #394047;
-    color:#ffffff;
-}
-footer a{
-    color: orangered;
-}
-
-.support_text{
-    font-weight: 900;
-    font-size: 35px;
-}
-.support_text2{
-    margin-bottom: 120px;
-}
-.lower_part{
-  
-    margin-top: 20px;
-}
-.liner{
-    border-top: 1px solid black;
-    margin-top: 10px;
 }
