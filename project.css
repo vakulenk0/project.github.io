@@ -55,7 +55,6 @@ header,
     height: 100%;
 }
 
-
 .mobileNavBar_block {
     position: fixed;
     bottom: 0;
@@ -141,7 +140,26 @@ main {
     width: 100%;
 }
 
-/* Support, help, expertixe */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------BODY--------------------------------- */
+
+/* Support, help, expertize */
 
 .support {
     width: 90%;
@@ -153,8 +171,6 @@ main {
 .text-sup {
     font-size: 42px;
 }
-
-
 
 .element-support {
     width: 24%;
@@ -189,7 +205,6 @@ main {
 .element-line-support1, .element-line-support2{
     height: 250px;
 }
-
 
 .divHelp1 {
     align-self: center;
@@ -264,8 +279,8 @@ main {
 }
 
 .div1-expertise {
-    width: 600px;
-    height: 600px;
+    max-width: 600px;
+    max-height: 600px;
 }
 
 .div2-expertise {
@@ -289,10 +304,6 @@ main {
     max-width: 450px;
     max-height: 450px;
 }
-
-
-
-/* Support, help, expertixe  end*/
 
 
 /* tariff */
@@ -372,8 +383,6 @@ main {
     background-size: cover;
 }
 
-/* ourDev */
-
 /* team */
 .team_header {
     font-weight: bold;
@@ -407,10 +416,47 @@ main {
 }
 
 /* Cases */
+.con img, .con{
+    border-radius: 10px;
+}
 
-.cases {
-    height: 950px;
-    max-height: 1100px;
+.con_back {
+    height: 100%;
+    border-radius: 10px;
+    background-size: cover;
+}
+
+.con_text {
+    position: absolute;
+    font-size:x-large ;
+    font-weight: bold;
+    color: white;
+    bottom: 0;
+    left: 0;
+    display: inline-block;
+}
+
+.con_text_wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.con2 .con_back {
+    background-image: url(img/kit/2.png);
+}
+
+.con3 .con_back {
+    background-image: url(img/kit/7.jpg);
+}
+
+.con4 .con_back {
+    background-image: url(img/kit/3.jpg);
+}
+
+.cases img{
+    width: 100%;
+    height: auto;
 }
 
 .cases_header {
@@ -450,6 +496,7 @@ main {
 .cont10, .cont11 {
     flex: 1;
 }
+
 
 
 /*   REVIEWS   */
@@ -565,10 +612,6 @@ main {
     background: url("https://raw.githubusercontent.com/Dadassasin/project/a35c8f4713c1407dccefa2f80d968485821cac3d/img/arrow-left.svg") no-repeat center;
     background-size: contain;
 }
-.slick-next {
-    background: url("") no-repeat center;
-    background-size: contain;
-}
 .reviews-slide-num {
     display: inline-block;
     margin: 0 46px;
@@ -583,40 +626,50 @@ main {
 
 
 
-/*   PARTNERS   */
-.main_partners {
+/*   partners   */
+
+.partner-logo-img {
+    max-width: 350px;
     width: 100%;
-    margin-top: 160px;
 }
-.partners-title {
-    font-weight: 700;
-    font-size: 42px;
-    line-height: 51px;
-    text-align: center;
-    color: #050C33;
-}
-.partners-description {
+
+
+/* partner */
+
+.partners_block {
+    overflow: hidden;
     text-align: center;
     margin-bottom: 42px;
 }
-[class^="partner-slide-"] {
-    border: 1px solid #e5e5e5;
-    box-sizing: border-box;
-    border-radius: 5px;
-    width: 291px;
-    height: 155px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5px;
+
+.partners-list-slider-1{
+    width: auto;
+    margin: 0 10px;
+    position: relative;
+    right: 25%;
 }
-.partner-logo-img {
-    max-width: 100%;
-    width: 290px;
-    height: 155px;
+
+.partner-slide{
+    border-width: 2px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: black;
+    display: inline-block;
+    margin:5px;
+}
+
+.partners_block img{
+    border-radius: 10px;
 }
 
 
+@media screen and (max-width: 575px){
+
+}
+
+
+
+/* часть димы */ 
 
 @media screen and (max-width: 575px){
     .text-sup {
@@ -652,8 +705,17 @@ main {
         width: 80%;
     }
 
+    .divlaptop {
+        flex-direction: column;
+    }
 
+    .div1-expertise img{
+        right: -30px;
+    }
 
+    .div2-expertise{
+        display: none;
+    }
 }
 
 @media screen and (min-width: 855px) and (max-width: 1155px) {
@@ -677,8 +739,6 @@ main {
     .div1-cases, .div2-cases {
         flex-direction: column;
     }
-
-
 }
 
 @media screen and(max-width: 1300px) {
@@ -688,17 +748,13 @@ main {
 
 }
 
-
-
 input {
     width: 100%;
 }
 
 
-
-
-
 /*-------------------FOOTER-----------------------*/
+
 footer{
     background-color: #394047;
     color:#ffffff;
@@ -714,31 +770,27 @@ footer a{
     font-weight: 900;
     font-size: 35px;
 }
-.support_text2{
-    
-    
-}
-.lower_part{
-  
 
+.lower_part{
     padding-bottom: 50px;
     padding-top: 30px;
 }
+
 .liner {
     border-top: 1px solid gray;
     margin-top: 10px;
     background-color: #394047;
 }
-    
-
 
 form{
     background-color: #394047;
 }
 
+
 input{
     background: transparent;
     border: none;
 }
+
 
 

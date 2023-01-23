@@ -7,14 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="js/javascript.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="js/review.js" defer></script>
+    <script src="js/slick.min.js" defer></script>
+    <script src="js/gallery.js" defer></script>
     <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="slick2.css">
+    <link rel="stylesheet" href="slick-theme.css">
+
 </head>
 
 <body>
@@ -39,7 +42,7 @@
                                 <a href="support.html" title="Drupal support">DRUPAL SUPPORT</a>
                             </div>
                             <div class="px-2 flex-fill">
-                                
+
                                 <div class="dropdown">
                                     <p class="m-0">WEB SERVER ADMINISTRATION◿</p>
                                     <div class="dropdown-content ">
@@ -146,8 +149,6 @@
                 </div>
             </div>
         </div>
-
-
     </header>
 
     <main>
@@ -381,6 +382,7 @@
                 </div>
             </div>
         </div>
+
         <div class="expertise mx-0">
             <div class="wrapper-expertise ">
                 <div class="empty-div">
@@ -423,11 +425,12 @@
                 </div>
             </div>
         </div>
+
         <div class="tariff_block">
             <div class="container">
                 <h2 class="tariff_header pt-5">Тарифы</h2>
                 <div class="tariff_panels d-flex flex-wrap my-3">
-                    <div class="tariff_wrapper col-xs-6 col-sm-6 col-md-4">
+                    <div class="tariff_wrapper col-xs-6 col-sm-6 col-md-4 my-xs-5">
                         <div class="tariff_panel">
                             <div class="tariff_content">
                                 <h3 class="tariff_content_header">Стартовый</h3>
@@ -502,9 +505,6 @@
             </div>
         </div>
 
-
-        </div>
-
         <div class="ourDev_block container p-5">
             <div class="ourDev_header p-2">
                 <h1>Наши опытные разработчики <br> быстро выполняют любые задачи</h1>
@@ -527,7 +527,6 @@
                 </div>
             </div>
         </div>
-
 
         <div class="team_block container">
             <h2 class="team_header py-5">Команда</h2>
@@ -562,16 +561,14 @@
                 <a class="btn px-4 py-3" href="/team.html">Вся команда</a>
             </div>
         </div>
-        <!--footer -->
 
-        <div class="cases container mx-auto flex-column">
+        <div class="cases container py-5">
             <h2 class="cases_header py-5">Последние кейсы</h2>
-            <div class="div1-cases d-flex justify-content-between">
-                <div class="cont1 d-flex flex-column">
-                    <div class="d-flex cont10">
-                    </div>
-                    <div class="cont11">
-                        <div class="mx-auto my-2 cont110" style="width: 80%; height: 80%;">
+            <div class="cases_panels d-flex flex-wrap">
+                <div class="con con1 col-xs-6 col-md-4 my-3">
+                    <img src="img/kit/1.png" alt="kit">
+                    <div class="cont p-3">
+                        <div class="mx-auto my-2">
                             <div class="my-1">
                                 <strong>Настройка кэширования данных. Апргрейд сервера.
                                     Ускорение работы сайта в 30 раз!</strong>
@@ -586,186 +583,112 @@
                         </div>
                     </div>
                 </div>
-                <div class="cont2 d-flex">
-
-                </div>
-            </div>
-            <div class="div2-cases d-flex justify-content-between">
-                <div class="cont3 d-flex">
-
-                </div>
-                <div class="cont4 d-flex">
-
-                </div>
-                <div class="cont5 d-flex flex-column">
-                    <div class="d-flex cont10">
-
+                <div class="con con2 col-xs-6 col-md-8 my-3">
+                    <div class="con_back py-5">
+                        <div class="con_text_wrapper py-5">
+                            <div class="con_text px-5">
+                                Meow
+                            </div>
+                        </div>
                     </div>
-                    <div class="cont11">
-                        <div class="mx-auto my-2 cont110" style="width: 80%; height: 80%;">
+                </div>
+                <div class="con con3 col-xs-6 col-md-4 my-3">
+                    <div class="con_back py-5">
+                        <div class="con_text_wrapper py-5">
+                            <div class="con_text px-5">
+                                Meow
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="con con4 col-xs-6 col-md-4 my-3">
+                    <div class="con_back py-5">
+                        <div class="con_text_wrapper py-5">
+                            <div class="con_text px-5">
+                                Meow
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="con con5 col-xs-6 col-md-4 my-3">
+                    <img src="img/kit/4.jpg" alt="kit">
+                    <div class="cont p-3">
+                        <div class="mx-auto my-2">
                             <div class="my-1">
-                                <strong>Обмен товарами и заказами интернет-магазинов на Drupal 7 с 1C:
-                                    Предприятие, МойСклад, Класс365</strong>
+                                <strong>Настройка кэширования данных. Апргрейд сервера.
+                                    Ускорение работы сайта в 30 раз!</strong>
                             </div>
                             <div style="margin-bottom: 20px;">
-                                <h6 class="number" style="font-size: 12px">22.08.2019</h6>
+                                <h6 class="number" style="font-size: 12px">04.05.2020</h6>
                             </div>
                             <div>
-                                <h6>Обпликован <a style="color: deepskyblue; text-decoration: none;" href="#">релиз модуля...</a></h6>
+                                <h6>Влияние скорости загрузки страниц сайта на отказы и конверсии.
+                                    Кейс ускорения...</h6>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
 
-        <footer class="footer">
-            <div class=" container">
-                <div class="all_footer">
-
-
-
-
-
-                        <div class="row">
-
-                            <div class="col-md-6 col-xs-12 col-sm-6">
-
-                                <div>
-                                    <div>
-                                        <div class="support_text">Подать заявку на поддержку или разработку сайта
-                                        </div>
-
-                                        <div class="support_text2">Вам нужно доработать функционал готового Drupal-сайта
-                                            или создать новый? Оценить стоимость разработки под ваши запросы? Просто
-                                            свяжитесь с нами, и наш менеджер поможет вам!</div>
-
-                                        <div style="margin-top: 100px;">
-                                                
-                                                <p><a href="tel:">+8 (800) 555-35-35</a></p>
-                                                <p><a href="mailto:">artlebedev@mail.ru</a></p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <div class="col-md-6 col-xs-12 col-sm-6">
-
-                                <div>
-                                    <form accept-charset="UTF-8">
-
-                                        
-                                            <div>
-
-
-                                                <p></p>
-                                                <input data-drupal-selector="edit-field-vashe-imya-0-value" type="text"
-                                                 name="field_vashe_imya[0][value]"
-                                                    value="" size="60" maxlength="255" placeholder="Ваше имя" />
-
-
-
-                                            </div>
-
-                                        
-                                        <div>
-                                            
-
-
-                                                <p></p>
-                                                <input data-drupal-selector="edit-field-telefon-0-value" type="text"
-                                                     name="field_telefon[0][value]"
-                                                    value="" size="60" maxlength="255" placeholder="Номер телефона"
-                                                    required="required" aria-required="true" />
-
-
-
-                                        </div>
-                                        <div>
-                                            
-
-
-                                                <p></p>
-                                                <input type="email"
-                                                    name="field_e_mail[0][value]" value="" size="60" maxlength="254"
-                                                    placeholder="E-mail" required="required" aria-required="true" />
-
-
-
-                                        </div>
-                                        <div>
-                                         
-
-
-                                                <p></p>
-                                                <div>
-                                                    <textarea style="width: 100%;" name="field_vash_[0][value]" rows="5" cols="60"
-                                                        placeholder="Ваш комментарий"></textarea>
-                                                </div>
-
-
-
-
-                                        </div>
-                                        <input autocomplete="off"
-                                            data-drupal-selector="form-q21xgo8yuoenxn4moim2a-tvjotxjligcpdj7vg49sg"
-                                            type="hidden" name="form_build_id"
-                                            value="form-Q21xgo8yuOeNXn4mOim2A-tvjotxJLIgcPDj7vG49Sg" /><input
-                                            data-drupal-selector="edit-contact-message-order-support-form" type="hidden"
-                                            name="form_id" value="contact_message_order_support_form" /><input
-                                            data-drupal-selector="edit-antibot-key" type="hidden" name="antibot_key"
-                                            value="" />
-                                        <div>
-
-                                            <label for="edit-fz152-agreement"
-                                                class="control-label option js-form-required form-required"><input
-                                                    required="required" data-drupal-selector="edit-fz152-agreement"
-                                                    class="form-checkbox required" type="checkbox"
-                                                    id="edit-fz152-agreement" name="fz152_agreement" value="1"
-                                                    aria-required="true" /><span
-                                                    class="custom-checkbox"></span>Отправляя заявку, я соглашаюсь на <a
-                                                    href="/privacy-policy" target="_blank" rel="nofollow">обработку моих
-                                                    персональных данных</a>.</label>
-
-
-                                        </div>
-                                        <div data-drupal-selector="edit-actions">
-                                            <button data-drupal-selector="edit-submit"
-                                                class="button button--primary js-form-submit form-submit btn-primary btn"
-                                                type="submit" id="edit-submit" name="op" value="Contact Us">Связаться с
-                                                нами</button></div>
-
-                                    </form>
-                                </div>
-
-                            </div>
-
-                        </div>
-
-
-
-
-
+        <div class="partners_block my-5">
+            <h2 class="partners-title">С нами работают</h2>
+            <p class="partners-description mb-3">Десятки компаний доверяют нам самое ценное, что у них есть в интернете
+                свои<br> сайты. Мы делаем всё, чтобы наше сотрудничество было долгим.</p>
+            <div class="part-slider partners-list-slider-1">
+                <div class="partner-slide">
+                    <img src="img/slide/1.jfif" alt="partner-logo-1" class="partner-logo-img">
                 </div>
-
-            </div>
-            <div class="liner">
-                <div class="container">
-
-
-
-
-                    <div class="lower_part">
-                        <p>Copyright &copy; Initlab, LLC<br />
-                            Drupal is a registered trademark of Dries Buytaert.</p>
-                    </div>
-
+                <div class="partner-slide">
+                    <img src="img/slide/8.jpg" alt="partner-logo-2" class="partner-logo-img">
+                </div>
+                <div class="partner-slide">
+                    <img src="img/slide/12.png" alt="partner-logo-6" class="partner-logo-img">
+                </div>
+                <div class="partner-slide">
+                    <img src="img/slide/2.webp" alt="partner-logo-2" class="partner-logo-img">
+                </div>
+                <div class="partner-slide">
+                    <img src="img/slide/3.webp" alt="partner-logo-3" class="partner-logo-img">
+                </div>
+                <div class="partner-slide">
+                    <img src="img/slide/4.webp" alt="partner-logo-4" class="partner-logo-img">
+                </div>
+                <div class="partner-slide">
+                    <img src="img/slide/5.png" alt="partner-logo-5" class="partner-logo-img">
+                </div>
+                <div class="partner-slide">
+                    <img src="img/slide/6.webp" alt="partner-logo-6" class="partner-logo-img">
                 </div>
             </div>
-        </footer>
-
+            <div class="part-slider partners-list-slider-2">
+                <div class="partner-slide">
+                    <img src="img/slide/7.jpg" alt="partner-logo-1" class="partner-logo-img">
+                </div>
+                <div class="partner-slide">
+                    <img src="img/slide/3.webp" alt="partner-logo-3" class="partner-logo-img">
+                </div>
+                <div class="partner-slide">
+                    <img src="img/slide/8.jpg" alt="partner-logo-2" class="partner-logo-img">
+                </div>
+                <div class="partner-slide">
+                    <img src="img/slide/9.png" alt="partner-logo-3" class="partner-logo-img">
+                </div>
+                <div class="partner-slide">
+                    <img src="img/slide/10.gif" alt="partner-logo-4" class="partner-logo-img">
+                </div>
+                <div class="partner-slide">
+                    <img src="img/slide/4.webp" alt="partner-logo-4" class="partner-logo-img">
+                </div>
+                <div class="partner-slide">
+                    <img src="img/slide/11.jpg" alt="partner-logo-5" class="partner-logo-img">
+                </div>
+                <div class="partner-slide">
+                    <img src="img/slide/12.png" alt="partner-logo-6" class="partner-logo-img">
+                </div>
+            </div>
+        </div>
     </main>
 </body>
+
 </html>
