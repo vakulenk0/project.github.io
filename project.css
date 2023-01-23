@@ -4,11 +4,6 @@ body {
     font-family: "Montserrat";
 }
 
-.content {
-    max-width: 850px;
-    width: 100%;
-    position: relative;
-}
 
 
 
@@ -17,7 +12,7 @@ body {
 
 header,
 .nav_bar a {
-    font-size: 10px;
+    font-weight: bold;
     color: rgb(255, 255, 255);
 }
 
@@ -39,11 +34,46 @@ header,
 }
 
 .header_logo {
-    height: 600px;
+    height: 700px;
     position: absolute;
     top: -200px;
     left: -200px;
     z-index: -1;
+}
+
+/* mobile nav bar */
+
+.mobileNavBar_block button {
+    background-color: transparent;
+    color: #151618;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: bold;
+    width: 50px;
+    height: 100%;
+}
+
+
+.mobileNavBar_block {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgb(58, 58, 58);
+    display: none;
+}
+
+@media screen and (max-width: 575px) {
+    .navBar_block {
+        display: none;
+    }
+
+    .mobileNavBar_block {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 /* background video */
@@ -51,15 +81,19 @@ header,
 .header_block {
     overflow: hidden;
     position: relative;
-    height: 100%;
     width: 100%;
 }
 
 .header_video {
+    object-fit: cover;
     position: absolute;
     top: 0;
+    right: 0;
     left: 0;
-    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    display: inline-block;
+    vertical-align: baseline;
     z-index: -10;
     filter: blur(5px);
     filter: brightness(25%);
@@ -83,6 +117,7 @@ header,
 
     padding: 0 5px;
     display: block;
+    color: black;
 }
 
 .dropdown:hover .dropdown-content {
@@ -124,6 +159,7 @@ main {
 .element-support {
     width: 24%;
 }
+
 .help {
     width: 90%;
     position: relative;
@@ -137,6 +173,7 @@ main {
     width: 90%;
     flex-direction: column;
 }
+
 .help-services {
     width: 100%;
 }
@@ -306,7 +343,7 @@ main {
 }
 
 .tariff_panel .btn {
-    color:black;
+    color: black;
 }
 
 .tariff_content {
@@ -326,9 +363,10 @@ main {
 }
 
 .tariff_block {
-    background: url(img/D-background-opacity.svg) no-repeat right top,#fff;
+    background: url(img/D-background-opacity.svg) no-repeat right top, #fff;
     background-size: cover;
 }
+
 /* ourDev */
 
 /* team */
@@ -630,6 +668,7 @@ main {
     }
 }
 
+<<<<<<< HEAD
 @media screen and(max-width: 769px) {
     .div1-expertise {
         width: 200px;
@@ -648,3 +687,48 @@ main {
         flex-direction: column;
     }
 }
+=======
+/*-------------------FOOTER-----------------------*/
+footer{
+    background-color: #394047;
+    color:#ffffff;
+    padding-top: 20px;
+
+}
+
+footer a{
+    color: white;
+}
+
+.support_text{
+    font-weight: 900;
+    font-size: 35px;
+}
+.support_text2{
+    
+    
+}
+.lower_part{
+  
+
+    padding-bottom: 50px;
+    padding-top: 30px;
+}
+.liner{
+    border-top: 1px solid gray;
+    margin-top: 10px;
+    background-color: #394047;
+    
+
+
+form{
+    background-color: #394047;
+}
+
+input{
+    background: transparent;
+    border: none;
+}
+
+
+>>>>>>> 924f5211431beb6233d496b6293595adbca67bdc
