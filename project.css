@@ -449,7 +449,8 @@ main {
 footer{
     background-color: #394047;
     color:#ffffff;
-    margin: 70px;
+    padding-top: 20px;
+
 }
 
 footer a{
@@ -466,7 +467,9 @@ footer a{
 }
 .lower_part{
   
-    margin-top: 20px;
+
+    padding-bottom: 50px;
+    padding-top: 30px;
 }
 .liner{
     border-top: 1px solid gray;
@@ -478,5 +481,15 @@ footer a{
 }
 
 form{
-    background-color: transparent;
+    background-color: #394047;
 }
+
+input{
+    background-color: transparent;
+    border: none;
+}
+
+button{
+    background: white;
+}
+
