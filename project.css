@@ -259,17 +259,19 @@ main {
 
 .divlaptop {
     display: flex;
+    position: relative;
+    margin-top: 100px;
 }
 
 .div1-expertise {
     width: 600px;
     height: 600px;
-    scale: 1.0;
 }
 
 .div2-expertise {
     width: 65%;
-    margin-top: 200px;
+    margin-top: 50px;
+    margin-left: 410px;
 }
 
 .wrapper-expertise {
@@ -281,9 +283,11 @@ main {
 }
 
 .div1-expertise img {
-    width: 100%;
-    height: auto;
-    margin-top: 150px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    max-width: 450px;
+    max-height: 450px;
 }
 
 
@@ -292,6 +296,7 @@ main {
 
 
 /* tariff */
+
 
 .tariff_header {
     font-weight: bold;
@@ -561,7 +566,7 @@ main {
     background-size: contain;
 }
 .slick-next {
-    background: url("/img/arrow-right.svg") no-repeat center;
+    background: url("") no-repeat center;
     background-size: contain;
 }
 .reviews-slide-num {
@@ -647,11 +652,6 @@ main {
         width: 80%;
     }
 
-    .divlaptop {
-        flex-direction: column;
-    }
-
-
 
 
 }
@@ -668,7 +668,6 @@ main {
     }
 }
 
-<<<<<<< HEAD
 @media screen and(max-width: 769px) {
     .div1-expertise {
         width: 200px;
@@ -682,12 +681,23 @@ main {
 
 }
 
-@media screen and(max-width: 1330px) {
+@media screen and(max-width: 1300px) {
     #div2 {
         flex-direction: column;
     }
+
 }
-=======
+
+
+
+input {
+    width: 100%;
+}
+
+
+
+
+
 /*-------------------FOOTER-----------------------*/
 footer{
     background-color: #394047;
@@ -714,10 +724,11 @@ footer a{
     padding-bottom: 50px;
     padding-top: 30px;
 }
-.liner{
+.liner {
     border-top: 1px solid gray;
     margin-top: 10px;
     background-color: #394047;
+}
     
 
 
@@ -731,4 +742,3 @@ input{
 }
 
 
->>>>>>> 924f5211431beb6233d496b6293595adbca67bdc

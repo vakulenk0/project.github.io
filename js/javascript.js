@@ -22,6 +22,10 @@ function faq() {
 }
 
 window.addEventListener("DOMContentLoaded", function () {
+    let red = document.getElementById('tt');
+    if(window.screen.width <= 1040){
+        red.style.display = "none";
+    }
     $(".reviews-slider").on("init", function () {
         $(".reviews-slide-current-num").text("0" + 1);
     });
