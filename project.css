@@ -476,20 +476,15 @@ footer a{
     margin-top: 10px;
     background-color: #394047;
     
-.all_footer{
-    background-color: #394047;
-}
+
 
 form{
     background-color: #394047;
 }
 
 input{
-    background-color: transparent;
+    background: transparent;
     border: none;
 }
 
-button{
-    background: white;
-}
 
