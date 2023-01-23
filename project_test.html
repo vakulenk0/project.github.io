@@ -391,7 +391,7 @@
             <div class="wrapper-expertise ">
                 <div class="empty-div">
                 </div>
-                <div class="divlaptop d-flex">
+                <!-- <div class="divlaptop d-flex">
                     <div class="div1-expertise ">
                         <img style="width: 100%;" src="img/laptop.png" alt="Error">
                     </div>
@@ -424,7 +424,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
 
@@ -695,18 +695,18 @@
 
 
         <footer>
-            <div class="footer_block container">
-                <div class="all_footer d-flex flex-wrap">
-                    <div class="footer_info col-md-6 col-xs-12 col-sm-6">
-                        <div class="footer_wrapper mr-5">
-                            <div class="support_text">
+            <div class="footer_block container  my-5">
+                <div class="all_footer d-flex flex-wrap my-4">
+                    <div class="footer_info col-md-6 col-xs-12 col-sm-6 p-0 my-3">
+                        <div class="footer_wrapper mr-0 mr-md-5">
+                            <div class="support_text mb-3 ">
                                 Подать заявку на поддержку или разработку сайта
                             </div>
-                            <div class="support_text2">Вам нужно доработать функционал готового Drupal-сайта
+                            <div class="support_text2 pb-2 pb-md-5">Вам нужно доработать функционал готового Drupal-сайта
                                 или создать новый? Оценить стоимость разработки под ваши запросы? Просто
                                 свяжитесь с нами, и наш менеджер поможет вам!
                             </div>
-                            <div style="margin-top: 100px;">
+                            <div class="contacts pt-2 pt-md-5">
                                 <a href="tel:">+8(918)641-70-**</a> <br>
                                 <a href="mailto:">mur@meow.kot</a>
                             </div>
@@ -714,57 +714,32 @@
                     </div>
 
 
-                    <div class="footer_form col-md-6 col-xs-12 col-sm-6">
-                        <div class="footer_wrapper ml-5">
-                            <form accept-charset="UTF-8">
-                                <div>
-                                    <p></p>
-                                    <input data-drupal-selector="edit-field-vashe-imya-0-value" type="text"
-                                        name="field_vashe_imya[0][value]" value="" size="60" maxlength="255"
-                                        placeholder="Ваше имя" />
-                                </div>
-                                <p></p>
-                                <input data-drupal-selector="edit-field-telefon-0-value" type="text"
-                                    name="field_telefon[0][value]" value="" size="60" maxlength="255"
-                                    placeholder="Номер телефона" required="required" aria-required="true" />
-                                <div>
-                                    <p></p>
-                                    <input type="email" name="field_e_mail[0][value]" value="" size="60" maxlength="254"
-                                        placeholder="E-mail" required="required" aria-required="true" />
-                                </div>
-                                <div>
-                                    <p></p>
-                                    <div>
-                                        <textarea name="field_vash_[0][value]" rows="5" cols="60"
-                                            placeholder="Ваш комментарий"></textarea>
-                                    </div>
-                                </div>
-                                <input autocomplete="off"
-                                    data-drupal-selector="form-q21xgo8yuoenxn4moim2a-tvjotxjligcpdj7vg49sg"
-                                    type="hidden" name="form_build_id"
-                                    value="form-Q21xgo8yuOeNXn4mOim2A-tvjotxJLIgcPDj7vG49Sg" /><input
-                                    data-drupal-selector="edit-contact-message-order-support-form" type="hidden"
-                                    name="form_id" value="contact_message_order_support_form" /><input
-                                    data-drupal-selector="edit-antibot-key" type="hidden" name="antibot_key" value="" />
-                                <div>
-
-                                    <label for="edit-fz152-agreement"
-                                        class="control-label option js-form-required form-required"><input
-                                            required="required" data-drupal-selector="edit-fz152-agreement"
-                                            class="form-checkbox required" type="checkbox" id="edit-fz152-agreement"
-                                            name="fz152_agreement" value="1" aria-required="true" /><span
-                                            class="custom-checkbox"></span>Отправляя заявку, я соглашаюсь на <a
-                                            href="/privacy-policy" target="_blank" rel="nofollow">обработку моих
-                                            персональных данных</a></label>
-
-
-                                </div>
-                                <div data-drupal-selector="edit-actions">
-                                    <button data-drupal-selector="edit-submit"
-                                        class="button button--primary js-form-submit form-submit btn-primary btn"
-                                        type="submit" id="edit-submit" name="op" value="Contact Us">Связаться с
-                                        нами</button>
-                                </div>
+                    <div class="footer_form col-md-6 col-xs-12 col-sm-6 p-0 my-3">
+                        <div class="footer_wrapper ml-0 ml-md-5">
+                            <form id="popupForm" class="popupForm d-flex flex-column align-items-stretch"
+                                accept-charset="UTF-8">
+                                <label>
+                                    <input class="form_elem form_name" id="formName" name="field_name"
+                                        placeholder="Ваше имя" required>
+                                </label>
+                                <label>
+                                    <input class="form_elem form_number" id="formName" name="field_name"
+                                        placeholder="Ваш номер" required>
+                                </label>
+                                <label>
+                                    <input class="form_elem form_email" id="formEmail" name="field_email" type="email"
+                                        placeholder="Ваш email" required>
+                                </label>
+                                <label>
+                                    <textarea class="form_elem form_message" id="formMessage" name="field_review"
+                                        placeholder="Ваш коментарий" rows="3"></textarea>
+                                </label>
+                                <label>
+                                    <input class="form_check" id="formCheck" name="field_check" type="checkbox">
+                                    Отправляя заявку, я
+                                    соглашаюсь на <a href="/privacy-policy">обработку моих персональных данных</a>
+                                </label>
+                                <input class="btn" type="submit" value="Отправить">
                             </form>
                         </div>
                     </div>
@@ -778,7 +753,8 @@
                     </div>
                 </div>
             </div>
-
+            <img class="footer_paw paw1" src="img/right_paw.png" alt="paw" />
+            <img class="footer_paw paw2" src="img/right_paw.png" alt="paw" />
         </footer>
     </main>
 </body>
