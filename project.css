@@ -449,7 +449,7 @@ main {
 footer{
     background-color: #394047;
     color:#ffffff;
-    
+    margin: 70px;
 }
 
 footer a{
@@ -461,7 +461,7 @@ footer a{
     font-size: 35px;
 }
 .support_text2{
-    margin-bottom: 120px;
+    
     
 }
 .lower_part{
@@ -472,8 +472,11 @@ footer a{
     border-top: 1px solid gray;
     margin-top: 10px;
     background-color: #394047;
-    margin-bottom: 120px;
-}
+    
 .all_footer{
     background-color: #394047;
+}
+
+form{
+    background-color: transparent;
 }
