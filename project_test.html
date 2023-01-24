@@ -19,7 +19,7 @@
     <script src="js/review.js" defer></script>
     <script src="js/slick.min.js" defer></script>
     <script src="js/gallery.js" defer></script>
-    
+    <script src="js/mobile_nav_bar.js" defer></script>
     <link rel="stylesheet" href="project.css">
     <link rel="stylesheet" href="slick2.css">
     <link rel="stylesheet" href="slick-theme.css">
@@ -28,14 +28,33 @@
 
 <body>
     <div class="mobileNavBar_block">
-        <div class="pt-2">
-            <img id="" src="img/drupal-coder.svg" alt="drupal-coder" />
+        <div class="accordion">
+            <h3><a href="support.html" title="Drupal support">DRUPAL SUPPORT</a></h3>
+            <h3 class="accordion">WEB SERVER ADMINISTRATION◿</h3>
+            <div class="dropdown-content-mobile ">
+                <h5><a class="drop_a_1-m py-1" href="#">Migration</a></h5>
+                <div>
+                    <h5><a class="drop_a_2-m py-1" href="#">Backups</a></h5>
+                </div>
+                <h5><a class="drop_a_3-m py-1" href="#">Optimization</a></h5>
+            </div>
+            <h3><a href="blog.html" title="Blog">BLOG</a></h3>
+            <h3><a href="seoPromotion.html" title="SEO promotion">SEO PROMOTION</a></h3>
+            <h3><a href="about.html" title="About">ABOUT</a></h3>
+            <h3><a href="#customers" title="Customers">CUSTOMERS</a></h3>
+            <h3><a href="#contacts" title="Contacts">CONTACTS</a></h3>
         </div>
-        <div>
-            <button type="button">≡</button>
+        <div class="mobileNavBar_sidebar d-flex justify-content-between">
+            <div class="mobileNavBar_logo pt-2">
+                <div class="mobileNavBar_logo_wrapper">
+                    <img id="" src="img/drupal-coder.svg" alt="drupal-coder" />
+                </div>
+
+            </div>
+            <div class="mobileNavBar_btn mb-1 px-2">≡</div>
         </div>
     </div>
-
+    
     <header>
         <div class="header_block pb-5">
             <div class="navBar_block container pt-5">
@@ -57,6 +76,9 @@
                                         <a class="drop_a_3" href="#">Optimization</a>
                                     </div>
                                 </div>
+                             
+                                
+
                             </div>
                             <div class="px-2 flex-fill">
                                 <a href="blog.html" title="Blog">BLOG</a>
