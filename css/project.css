@@ -256,6 +256,12 @@ main {
     width: 24%;
 }
 
+.support_text {
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 1.25;
+}
+
 .help {
     width: 90%;
     position: relative;
@@ -354,51 +360,6 @@ main {
     z-index: -1;
 }
 
-.divlaptop {
-    display: flex;
-}
-
-.div1-expertise {
-    width: 600px;
-    height: 600px;
-    scale: 1.0;
-}
-
-.div2-expertise {
-    width: 65%;
-    margin-top: 200px;
-}
-
-.wrapper-expertise {
-    height: 100%;
-}
-
-.empty-div {
-    height: 15%;
-}
-
-.div1-expertise img {
-    width: 100%;
-    height: auto;
-    margin-top: 150px;
-}
-
-@media screen and (max-width: 575px) {
-
-    .expertise {
-        height: 100vh;
-    }
-
-    .empty-div {
-        height: 35%;
-    }
-
-    .div1-expertise {
-        position: absolute;
-        right: 0;
-        bottom: 7%;
-    }
-}
 
 
 
@@ -512,6 +473,8 @@ main {
 }
 
 /* Cases */
+
+
 .con img,
 .con {
     border-radius: 10px;
@@ -601,10 +564,6 @@ main {
 .partners_block img {
     border-radius: 10px;
 }
-
-
-@media screen and (max-width: 575px) {}
-
 
 
 /* часть димы */
@@ -727,12 +686,6 @@ footer {
 
 footer a {
     color: white;
-}
-
-.support_text {
-    font-weight: bold;
-    font-size: 35px;
-    line-height: 1.25;
 }
 
 .lower_part {
