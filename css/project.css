@@ -474,7 +474,7 @@ main {
 }
 
 .tariff_block {
-    background: url(img/D-background-opacity.svg) no-repeat right top, #fff;
+    background: url(../img/D-background-opacity.svg) no-repeat right top, #fff;
     background-size: cover;
 }
 
@@ -540,15 +540,15 @@ main {
 }
 
 .con2 .con_back {
-    background-image: url(img/kit/2.png);
+    background-image: url(../img/kit/2.png);
 }
 
 .con3 .con_back {
-    background-image: url(img/kit/7.jpg);
+    background-image: url(../img/kit/7.jpg);
 }
 
 .con4 .con_back {
-    background-image: url(img/kit/3.jpg);
+    background-image: url(../img/kit/3.jpg);
 }
 
 .cases img {
@@ -561,193 +561,7 @@ main {
     text-align: center;
 }
 
-.div1-cases {
-    height: 50%;
-}
 
-.div2-cases {
-    height: 50%;
-}
-
-.cont1 {
-    flex: 1;
-}
-
-.cont2 {
-    flex: 2;
-}
-
-.cont3,
-.cont4,
-.cont5 {
-    flex: 1;
-}
-
-.cont2,
-.cont3,
-.cont4,
-.cont10 {
-    background-image: url("https://integral-analytics.ru/uploads/s/n/q/k/nqkbjv0eqzsf/img/full_UNGW2pHI.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    margin: 10px;
-    border-radius: 10px;
-}
-
-.cont10,
-.cont11 {
-    flex: 1;
-}
-
-
-
-/*   REVIEWS   */
-.main_reviews {
-    width: 100%;
-    margin: 160px auto 0 auto;
-}
-
-.main_reviews::before {
-    position: absolute;
-    content: "";
-    background: url("https://raw.githubusercontent.com/Dadassasin/project/a35c8f4713c1407dccefa2f80d968485821cac3d/img/right-quote-sign_2.svg") no-repeat;
-    width: 512px;
-    height: 616px;
-}
-
-.reviews-title {
-    font-weight: 700;
-    font-size: 42px;
-    line-height: 51px;
-    text-align: center;
-    color: #050C33;
-}
-
-.reviews-container {
-    position: relative;
-    width: 980px;
-    padding: 66px 0 66px 66px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    box-shadow: 0 4px 60px rgb(162 162 162 / 25%);
-    margin: 120px auto 0 auto;
-    display: flex;
-    background-color: white;
-}
-
-.reviews-slider {
-    border-right: 1px solid #cdcdcd;
-    padding: 14px 60px;
-    width: 64%;
-}
-
-.reviews-container::before {
-    content: "";
-    position: absolute;
-    top: -40px;
-    bottom: 0;
-    left: 64px;
-    right: 64px;
-    z-index: -1;
-    background: #FFFFFF;
-    opacity: 0.5;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    box-sizing: border-box;
-    box-shadow: 0 4px 60px rgb(162 162 162 / 25%);
-    border-radius: 5px;
-}
-
-.reviews-container::after {
-    content: "";
-    position: absolute;
-    top: -72px;
-    bottom: 0;
-    left: 128px;
-    right: 128px;
-    z-index: -2;
-    background: #FFFFFF;
-    opacity: 0.34;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    box-sizing: border-box;
-    box-shadow: 0 4px 60px rgb(162 162 162 / 25%);
-    border-radius: 5px;
-}
-
-.review-company-logo-img {
-    margin: 0 0 40px;
-}
-
-.review-message {
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 1.2;
-    color: #050c33;
-    margin-bottom: 28px;
-}
-
-.review-sign-wrapper {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.2;
-    color: #838b9c;
-}
-
-.review-sign {
-    margin: 0;
-}
-
-.review-sign-link {
-    text-decoration: underline;
-    color: #050c33;
-    outline: 0;
-    font-weight: normal;
-}
-
-.review-sign-link:hover {
-    color: #050c33;
-}
-
-.reviews-slider-arrows-wrapper {
-    display: flex;
-    margin: auto;
-}
-
-.reviews-slider-arrows {
-    display: flex;
-    align-items: center;
-}
-
-.slick-arrow {
-    width: 16px;
-    height: 32px;
-    border: 0;
-    box-shadow: none;
-    font-size: 0;
-    outline: 0;
-}
-
-.slick-prev {
-    background: url("https://raw.githubusercontent.com/Dadassasin/project/a35c8f4713c1407dccefa2f80d968485821cac3d/img/arrow-left.svg") no-repeat center;
-    background-size: contain;
-}
-
-.slick-next {
-    background: url("/img/arrow-right.svg") no-repeat center;
-    background-size: contain;
-}
-
-.reviews-slide-num {
-    display: inline-block;
-    margin: 0 46px;
-    font-size: 28px;
-    vertical-align: middle;
-    color: #e0e0e0;
-}
-
-.reviews-slide-current-num {
-    color: #050c33;
-}
 
 
 
