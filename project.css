@@ -98,7 +98,7 @@ header,
     filter: brightness(25%);
 }
 
-/* Dropdown menu */
+ Dropdown menu 
 
 .dropdown {
     position: relative;
@@ -106,11 +106,18 @@ header,
 }
 
 .dropdown-content {
-    display: none;
+    
     position: absolute;
     background-color: #f1f1f1;
     z-index: 1;
 }
+.dropdown-content {
+    opacity: 0; 
+    visibility: hidden;
+    transition-property: opacity, visibility; 
+    transition-duration: 1s; 
+    transition-delay: 1s;
+   }
 
 .dropdown-content a {
 
@@ -119,9 +126,19 @@ header,
     color: black;
 }
 
-.dropdown:hover .dropdown-content {
-    display: block;
+.dropdown-content ul{
+    margin:0;
+    padding: 0;
+    list-style: none;
 }
+
+.dropdown:hover .dropdown-content {
+    opacity: 1; 
+    visibility: visible;
+} 
+
+
+
 
 /* Achivment */
 
