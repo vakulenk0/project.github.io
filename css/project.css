@@ -479,7 +479,7 @@ main {
 }
 
 .tariff_block {
-    background: url(img/D-background-opacity.svg) no-repeat right top, #fff;
+    background: url(../img/D-background-opacity.svg) no-repeat right top, #fff;
     background-size: cover;
 }
 
@@ -545,15 +545,15 @@ main {
 }
 
 .con2 .con_back {
-    background-image: url(img/kit/2.png);
+    background-image: url(../img/kit/2.png);
 }
 
 .con3 .con_back {
-    background-image: url(img/kit/7.jpg);
+    background-image: url(../img/kit/7.jpg);
 }
 
 .con4 .con_back {
-    background-image: url(img/kit/3.jpg);
+    background-image: url(../img/kit/3.jpg);
 }
 
 .cases img {
@@ -566,9 +566,6 @@ main {
     text-align: center;
 }
 
-.div1-cases {
-    height: 50%;
-}
 
 .div2-cases {
     height: 50%;
