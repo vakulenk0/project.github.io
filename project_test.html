@@ -11,20 +11,19 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
-
-
 
     <script src="js/review.js" defer></script>
     <script src="js/slick.min.js" defer></script>
     <script src="js/gallery.js" defer></script>
     <script src="js/mobile_nav_bar.js" defer></script>
+    <script src="js/accordion.js" defer></script>
+    <script src="js/form.js" defer></script>
 
-    
     <link rel="stylesheet" href="css/project.css">
     <link rel="stylesheet" href="css/slick2.css">
     <link rel="stylesheet" href="css/slick-theme.css">
+
 
 </head>
 
@@ -112,7 +111,7 @@
                         <div class="drupal_development col-md-6 col-6 py-4">
                             <h1 class="m-0">Drupal <br> development</h1>
                             <div class="m-1"> Development and support of <br> Drupal-powered websites since 2005</div>
-                            <a href="#tariff_block" class="btn m-1">Plans</a>
+                            <a href="#tariff" class="btn m-1">Plans</a>
                         </div>
                         <div class="achivments col-md-6 d-flex flex-column py-4">
                             <div class="achivments_first_row d-flex">
@@ -453,7 +452,7 @@
             </div>
         </div>
 
-        <div class="tariff_block">
+        <div id="tariff" class="tariff_block">
             <div class="container">
                 <h2 class="tariff_header pt-5">Тарифы</h2>
                 <div class="tariff_panels d-flex flex-wrap my-3">
@@ -497,7 +496,7 @@
                                         <li>Предоплата от 6000 рублей в месяц</li>
                                     </div>
                                 </ul>
-                                <a href="#form" class="btn mt-3 mb-1">Свяжитесь с нами</a>
+                                <a href="#popupForm" class="btn mt-3 mb-1">Свяжитесь с нами</a>
                             </div>
                         </div>
                     </div>
@@ -595,17 +594,17 @@
                 <div class="team_panel col-xs-6 col-sm-6 col-md-4">
                     <img class="team_photo" src="img/kek/literally_me.jpg" alt="photo1">
                     <h5>Мифтахов Михаил</h5>
-                    <div>Главый говнокодер и невероятный дизайнер сего безобразия</div>
+                    <div>Главый программист и невероятный дизайнер сего безобразия</div>
                 </div>
                 <div class="team_panel col-xs-6 col-sm-6 col-md-4">
                     <img class="team_photo" src="img/kek/pes.jpg" alt="photo2">
                     <h5>Вакуленко Дмитрий</h5>
-                    <div>Говнокодер поменбше, главный пес проекта</div>
+                    <div>Программист поменбше, главный пес проекта</div>
                 </div>
                 <div class="team_panel col-xs-6 col-sm-6 col-md-4">
                     <img class="team_photo" src="img/kek/vlad.jpg" alt="photo3">
                     <h5>Макеев Владислав</h5>
-                    <div>Буквально говнокодер, выдает базу</div>
+                    <div>Еще менбше программист блин, выдает базу</div>
                 </div>
                 <div class="team_panel col-xs-6 col-sm-6 col-md-4">
                     <img class="team_photo" src="img/kek/literally_me_3.png" alt="photo3">
@@ -746,6 +745,75 @@
             </div>
         </div>
 
+        <div class="FAQ_block container py-5">
+            <div class="FAQ_header">
+                <h1>FAQ</h1>
+            </div>
+            <div class="FAQ_body accordion">
+                <div class="FAQ_elem">
+                    <div class="FAQ_elem_wrapper p-2">
+                        <div class="FAQ_question">
+                            <h3>
+                                <p>1.</p>Вопрос 1
+                            </h3>
+                        </div>
+                        <div class="FAQ_answer">
+                            Ответ 1
+                        </div>
+                    </div>
+                </div>
+                <div class="FAQ_elem">
+                    <div class="FAQ_elem_wrapper p-2">
+                        <div class="FAQ_question">
+                            <h3>
+                                <p>2.</p>Вопрос 2
+                            </h3>
+                        </div>
+                        <div class="FAQ_answer">
+                            Ответ 2
+                        </div>
+                    </div>
+                </div>
+                <div class="FAQ_elem">
+                    <div class="FAQ_elem_wrapper p-2">
+                        <div class="FAQ_question">
+                            <h3>
+                                <p>3.</p>Вопрос 3
+                            </h3>
+                        </div>
+                        <div class="FAQ_answer">
+                            Ответ 3
+                        </div>
+                    </div>
+                </div>
+                <div class="FAQ_elem">
+                    <div class="FAQ_elem_wrapper p-2">
+                        <div class="FAQ_question">
+                            <h3>
+                                <p>4.</p>Вопрос 4
+                            </h3>
+                        </div>
+                        <div class="FAQ_answer">
+                            Ответ 4
+                        </div>
+                    </div>
+                </div>
+                <div class="FAQ_elem">
+                    <div class="FAQ_elem_wrapper p-2">
+                        <div class="FAQ_question">
+                            <h3>
+                                <p>5.</p>Вопрос 5
+                            </h3>
+                        </div>
+                        <div class="FAQ_answer">
+                            Ответ 5
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     </main>
 
     <footer>
@@ -769,14 +837,14 @@
                 </div>
                 <div class="footer_form col-md-6 col-xs-12 col-sm-6 p-0 my-3">
                     <div class="footer_wrapper ml-0 ml-md-5">
-                        <form id="popupForm" class="popupForm d-flex flex-column align-items-stretch"
+                        <form id="popupForm" class="footer_form d-flex flex-column align-items-stretch"
                             accept-charset="UTF-8">
                             <label>
                                 <input class="form_elem form_name" id="formName" name="field_name"
                                     placeholder="Ваше имя" required>
                             </label>
                             <label>
-                                <input class="form_elem form_number" id="formName" name="field_name"
+                                <input class="form_elem form_number" id="formNumber" name="field_number"
                                     placeholder="Ваш номер" required>
                             </label>
                             <label>
@@ -808,6 +876,30 @@
         <img class="footer_paw paw1" src="img/right_paw.png" alt="paw" />
         <img class="footer_paw paw2" src="img/right_paw.png" alt="paw" />
     </footer>
+
+    <form id="popupForm" class="popupForm d-flex flex-column align-items-stretch" accept-charset="UTF-8">
+        <label>
+            <input class="form_elem form_name" id="formName" name="field_name" placeholder="Ваше имя" required>
+        </label>
+        <label>
+            <input class="form_elem form_number" id="formNumber" name="field_number" placeholder="Ваш номер" required>
+        </label>
+        <label>
+            <input class="form_elem form_email" id="formEmail" name="field_email" type="email" placeholder="Ваш email"
+                required>
+        </label>
+        <label>
+            <textarea class="form_elem form_message" id="formMessage" name="field_review" placeholder="Ваш коментарий"
+                rows="3"></textarea>
+        </label>
+        <label>
+            <input class="form_check" id="formCheck" name="field_check" type="checkbox">
+            Отправляя заявку, я
+            соглашаюсь на <a href="/privacy-policy">обработку моих персональных данных</a>
+        </label>
+        <input class="btn" type="submit" value="Отправить">
+    </form>
+
 </body>
 
 </html>

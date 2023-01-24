@@ -817,3 +817,11 @@ form a {
     background-color: transparent;
 }
 
+
+
+/* popup */
+
+.popupForm {
+    position: fixed;
+    display: none;
+}
