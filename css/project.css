@@ -5,7 +5,85 @@ body {
 }
 
 
+/* mobile-menu */
 
+.mobileNavBar_block {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: rgb(58, 58, 58);
+    display: none;
+}
+
+.mobileNavBar_btn {
+    position: relative;
+    color: #151618;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    height: 90%;
+}
+
+.mobileNavBar_logo {
+    position: relative;
+}
+
+@media screen and (max-width: 575px) {
+    .navBar_block {
+        display: none;
+    }
+
+    .mobileNavBar_block {
+        display: block;
+    }
+}
+
+.dropdown-content-mobile {
+    border-left: solid 1px #151618;
+    border-right: solid 1px #151618;
+    border-top: solid 1px #151618;
+}
+
+.dropdown-content-mobile a {
+    display: block;
+    padding-left: 30px;
+}
+
+.dropdown-content-mobile div {
+    border-top: dashed 1px #151618;
+    border-bottom: dashed 1px #151618;
+}
+
+.dropdown-content-mobile h5 {
+    margin: 0;
+}
+
+/* mobile-menu accordion */
+
+.accordion {
+    width: 100%;
+    border-bottom: solid 1px #151618;
+}
+
+.accordion a {
+    color: #151618;
+}
+
+.accordion h3 {
+    background: rgb(58, 58, 58);
+    padding: 7px 15px;
+    margin: 0;
+    font: bold 120%/100% Arial, Helvetica, sans-serif;
+    border: solid 1px #151618;
+    border-bottom: none;
+    cursor: pointer;
+    color: #151618;
+}
+
+h3.accordion.active {
+    box-shadow: 0px 2px 10px #151618;
+}
 
 
 /* ---------------------------------HEADER--------------------------------- */
@@ -41,39 +119,6 @@ header,
     z-index: -1;
 }
 
-/* mobile nav bar */
-
-.mobileNavBar_block button {
-    background-color: transparent;
-    color: #151618;
-    border: none;
-    text-align: center;
-    text-decoration: none;
-    font-size: 40px;
-    font-weight: bold;
-    width: 50px;
-    height: 100%;
-}
-
-.mobileNavBar_block {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    z-index: 10;
-    background-color: rgb(58, 58, 58);
-    display: none;
-}
-
-@media screen and (max-width: 575px) {
-    .navBar_block {
-        display: none;
-    }
-
-    .mobileNavBar_block {
-        display: flex;
-        justify-content: space-between;
-    }
-}
 
 /* background video */
 
@@ -105,23 +150,53 @@ header,
     display: inline-block;
 }
 
+
 .dropdown-content {
-    display: none;
     position: absolute;
-    background-color: #f1f1f1;
-    z-index: 1;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    height: 0;
+}
+
+.dropdown:hover .drop_a_1{
+    transform: scaleY(1);
+    transition: transform 0.15s;
+}
+.dropdown:hover .drop_a_2{
+    transform: scaleY(1);
+    transition: transform 0.15s 0.15s;
+}
+.dropdown:hover .drop_a_3{
+    transform: scaleY(1);
+    transition: transform 0.15s 0.3s;
 }
 
 .dropdown-content a {
-
+    background-color: coral;
     padding: 0 5px;
     display: block;
     color: black;
+    transform-origin: 0 0;
 }
 
-.dropdown:hover .dropdown-content {
-    display: block;
+.drop_a_1 {
+    transform: scaleY(0);
+    transition: transform 0.15s 0.3s;
 }
+.drop_a_2 {
+    transform: scaleY(0);
+    transition: transform 0.15s 0.15s;
+}
+.drop_a_3 {
+    transform: scaleY(0);
+    transition: transform 0.15s;
+}
+
+
+
+
 
 /* Achivment */
 
@@ -160,6 +235,11 @@ main {
 /* ---------------------------------BODY--------------------------------- */
 
 /* Support, help, expertize */
+
+.Achievement {
+    position: relative;
+    z-index: 10;
+}
 
 .support {
     width: 90%;
@@ -234,8 +314,9 @@ main {
 }
 
 .expertise {
+    position: relative;
     background-color: #394047;
-    height: 100vh;
+    height: 80vh;
     width: auto;
     margin-top: -220px;
 }
@@ -295,7 +376,7 @@ main {
 }
 
 .empty-div {
-    height: 35%;
+    height: 15%;
 }
 
 .div1-expertise img {
@@ -305,6 +386,24 @@ main {
     max-width: 450px;
     max-height: 450px;
 }
+
+@media screen and (max-width: 575px) {
+
+    .expertise {
+        height: 100vh;
+    }
+
+    .empty-div {
+        height: 35%;
+    }
+
+    .div1-expertise {
+        position: absolute;
+        right: 0;
+        bottom: 7%;
+    }
+}
+
 
 
 /* tariff */
@@ -383,6 +482,7 @@ main {
     background: url(img/D-background-opacity.svg) no-repeat right top, #fff;
     background-size: cover;
 }
+
 
 /* team */
 .team_header {
@@ -734,9 +834,7 @@ main {
         flex-direction: column;
     }
 
-    .div1-expertise img {
-        right: -30px;
-    }
+
 
     .div2-expertise {
         display: none;
@@ -774,9 +872,34 @@ main {
 
 }
 
+
 input {
     width: 100%;
 }
+
+
+
+/* FAQ */
+
+.FAQ_header {
+    text-align: center;
+}
+
+.FAQ_question p, .FAQ_question h3{
+    display: inline-block;
+}
+
+.FAQ_answer {
+    transform-origin: 0 0;
+    transform: scale(0);
+    transition: transform 1s;
+}
+
+.FAQ_question:hover .FAQ_answer{
+    transform: scale(1);
+}
+
+
 
 
 /*-------------------FOOTER-----------------------*/

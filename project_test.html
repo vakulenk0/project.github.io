@@ -11,10 +11,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+
+
+
     <script src="js/review.js" defer></script>
     <script src="js/slick.min.js" defer></script>
     <script src="js/gallery.js" defer></script>
     <script src="js/main.js" defer></script>
+    <script src="js/mobile_nav_bar.js" defer></script>
     <link rel="stylesheet" href="css/project.css">
     <link rel="stylesheet" href="css/slick2.css">
     <link rel="stylesheet" href="css/slick-theme.css">
@@ -22,14 +26,34 @@
 </head>
 
 <body>
-    <div style="width: 100%;" class="mobileNavBar_block">
-        <div class="pt-2">
-            <img id="" src="img/drupal-coder.svg" alt="drupal-coder" />
+    <div class="mobileNavBar_block">
+        <div class="accordion">
+            <h3><a href="support.html" title="Drupal support">DRUPAL SUPPORT</a></h3>
+            <h3 class="accordion">WEB SERVER ADMINISTRATION◿</h3>
+            <div class="dropdown-content-mobile ">
+                <h5><a class="drop_a_1-m py-1" href="#">Migration</a></h5>
+                <div>
+                    <h5><a class="drop_a_2-m py-1" href="#">Backups</a></h5>
+                </div>
+                <h5><a class="drop_a_3-m py-1" href="#">Optimization</a></h5>
+            </div>
+            <h3><a href="blog.html" title="Blog">BLOG</a></h3>
+            <h3><a href="seoPromotion.html" title="SEO promotion">SEO PROMOTION</a></h3>
+            <h3><a href="about.html" title="About">ABOUT</a></h3>
+            <h3><a href="#customers" title="Customers">CUSTOMERS</a></h3>
+            <h3><a href="#contacts" title="Contacts">CONTACTS</a></h3>
         </div>
-        <div>
-            <button type="button">≡</button>
+        <div class="mobileNavBar_sidebar d-flex justify-content-between">
+            <div class="mobileNavBar_logo pt-2">
+                <div class="mobileNavBar_logo_wrapper">
+                    <img id="" src="img/drupal-coder.svg" alt="drupal-coder" />
+                </div>
+
+            </div>
+            <div class="mobileNavBar_btn mb-1 px-2">≡</div>
         </div>
     </div>
+    
     <header>
         <div class="header_block pb-5">
             <div class="navBar_block container pt-5">
@@ -42,16 +66,18 @@
                             <div class="px-2 flex-fill">
                                 <a href="support.html" title="Drupal support">DRUPAL SUPPORT</a>
                             </div>
-                            <div class="px-2 flex-fill">
-
+                            <div class="dropdown_main px-2 flex-fill">
                                 <div class="dropdown">
                                     <p class="m-0">WEB SERVER ADMINISTRATION◿</p>
                                     <div class="dropdown-content ">
-                                        <a href="#">Migration</a>
-                                        <a href="#">Backups</a>
-                                        <a href="#">Optimization</a>
+                                        <a class="drop_a_1" href="#">Migration</a>
+                                        <a class="drop_a_2" href="#">Backups</a>
+                                        <a class="drop_a_3" href="#">Optimization</a>
                                     </div>
                                 </div>
+                             
+                                
+
                             </div>
                             <div class="px-2 flex-fill">
                                 <a href="blog.html" title="Blog">BLOG</a>
@@ -388,7 +414,7 @@
             <div class="wrapper-expertise ">
                 <div class="empty-div">
                 </div>
-                 <div class="divlaptop d-flex">
+                <div class="divlaptop d-flex">
                     <div class="div1-expertise ">
                         <img style="width: 100%;" src="img/laptop.png" alt="Error">
                     </div>
@@ -418,7 +444,6 @@
                                                 для других CMS!</h6>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
                         </div>
@@ -529,7 +554,7 @@
             </div>
         </div>
 
-        <div class="team_block container">
+        <!-- <div class="team_block container">
             <h2 class="team_header py-5">Команда</h2>
             <div class="team_panels d-flex flex-wrap">
                 <div class="team_panel col-xs-6 col-sm-6 col-md-4">
@@ -557,6 +582,36 @@
                     <h5>Ирина Торкунова</h5>
                     <div>Менеджер по работе с клиентами</div>
                 </div>
+            </div>
+            <div class="team_button d-flex justify-content-center pb-5">
+                <a class="btn px-4 py-3" href="/team.html">Вся команда</a>
+            </div>
+        </div> -->
+
+        <div class="team_block container">
+            <h2 class="team_header py-5">Команда</h2>
+            <div class="team_panels d-flex flex-wrap">
+                <div class="team_panel col-xs-6 col-sm-6 col-md-4">
+                    <img class="team_photo" src="img/kek/literally_me.jpg" alt="photo1">
+                    <h5>Мифтахов Михаил</h5>
+                    <div>Главый говнокодер сего безобразия</div>
+                </div>
+                <div class="team_panel col-xs-6 col-sm-6 col-md-4">
+                    <img class="team_photo" src="img/kek/pes.jpg" alt="photo2">
+                    <h5>Вакуленко Дмитрий</h5>
+                    <div>Говнокодер поменбше, главный пес проекта</div>
+                </div>
+                <div class="team_panel col-xs-6 col-sm-6 col-md-4">
+                    <img class="team_photo" src="img/kek/vlad.jpg" alt="photo3">
+                    <h5>Макеев Владислав</h5>
+                    <div>Буквально говнокодер, выдает базу</div>
+                </div>
+                <div class="team_panel col-xs-6 col-sm-6 col-md-4">
+                    <img class="team_photo" src="img/kek/literally_me_3.png" alt="photo3">
+                    <h5>Мистагов Михаил</h5>
+                    <div>Организует работу этих трех малолетних дебилов</div>
+                </div>
+
             </div>
             <div class="team_button d-flex justify-content-center pb-5">
                 <a class="btn px-4 py-3" href="/team.html">Вся команда</a>
@@ -690,47 +745,97 @@
             </div>
         </div>
 
-
-        <footer>
-            <div class="footer_block container  my-5">
-                <div class="all_footer d-flex flex-wrap my-4">
-                    <div class="footer_info col-md-6 col-xs-12 col-sm-6 p-0 my-3">
-                        <div class="footer_wrapper mr-0 mr-md-5">
-                            <div class="support_text mb-3 ">
-                                Подать заявку на поддержку или разработку сайта
-                            </div>
-                            <div class="support_text2 pb-2 pb-md-5">Вам нужно доработать функционал готового Drupal-сайта
-                                или создать новый? Оценить стоимость разработки под ваши запросы? Просто
-                                свяжитесь с нами, и наш менеджер поможет вам!
-                            </div>
-                            <div class="contacts pt-2 pt-md-5">
-                                <a href="tel:">+8(918)641-70-**</a> <br>
-                                <a href="mailto:">mur@meow.kot</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="footer_form col-md-6 col-xs-12 col-sm-6 p-0 my-3">
-                        <div class="footer_wrapper ml-0 ml-md-5">
-                            <div id="app">
-
-                            </div>
-                        </div>
-                    </div>
+        <!-- <div class="FAQ_block container">
+            <div class="FAQ_header"><h1>FAQ</h1></div>
+            <div class="FAQ_element .accordion">
+                <div class="FAQ_question ">
+                    <p>1.</p><h3>Вопрос 1</h3>
+                </div>
+                <div class="dropdown-content-mobile FAQ_answer">
+                    Ответ 1
+>>>>>>> c7641c8eef9723407be0529631a7c93964317072
                 </div>
             </div>
-
-            <div class="underline">
-                <div class="container">
-                    <div class="lower_part">
-                        <p>Copyright &copy; Initlab, LLC <br> Drupal is a registered trademark of Dries Buytaert.</p>
-                    </div>
+            <div class="FAQ_element">
+                <div class="FAQ_question">
+                    <p>2.</p><h3>Вопрос 2</h3>
+                </div>
+                <div class="FAQ_answer">
+                    Ответ 2
                 </div>
             </div>
-            <img class="footer_paw paw1" src="img/right_paw.png" alt="paw" />
-            <img class="footer_paw paw2" src="img/right_paw.png" alt="paw" />
-        </footer>
+            <div class="FAQ_element">
+                <div class="FAQ_question">
+                    <p>3.</p><h3>Вопрос 3</h3>
+                </div>
+                <div class="FAQ_answer">
+                    <p>Ответ 3</p>
+                </div>
+            </div>
+        </div> -->
+
     </main>
+
+    <footer>
+        <div class="footer_block container  my-5">
+            <div class="all_footer d-flex flex-wrap my-4">
+                <div class="footer_info col-md-6 col-xs-12 col-sm-6 p-0 my-3">
+                    <div class="footer_wrapper mr-0 mr-md-5">
+                        <div class="support_text mb-3 ">
+                            Подать заявку на поддержку или разработку сайта
+                        </div>
+                        <div class="support_text2 pb-2 pb-md-5">Вам нужно доработать функционал готового
+                            Drupal-сайта
+                            или создать новый? Оценить стоимость разработки под ваши запросы? Просто
+                            свяжитесь с нами, и наш менеджер поможет вам!
+                        </div>
+                        <div class="contacts pt-2 pt-md-5">
+                            <a href="tel:">+8(918)641-70-**</a> <br>
+                            <a href="mailto:">mur@meow.kot</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_form col-md-6 col-xs-12 col-sm-6 p-0 my-3">
+                    <div class="footer_wrapper ml-0 ml-md-5">
+                        <form id="popupForm" class="popupForm d-flex flex-column align-items-stretch"
+                            accept-charset="UTF-8">
+                            <label>
+                                <input class="form_elem form_name" id="formName" name="field_name"
+                                    placeholder="Ваше имя" required>
+                            </label>
+                            <label>
+                                <input class="form_elem form_number" id="formName" name="field_name"
+                                    placeholder="Ваш номер" required>
+                            </label>
+                            <label>
+                                <input class="form_elem form_email" id="formEmail" name="field_email" type="email"
+                                    placeholder="Ваш email" required>
+                            </label>
+                            <label>
+                                <textarea class="form_elem form_message" id="formMessage" name="field_review"
+                                    placeholder="Ваш коментарий" rows="3"></textarea>
+                            </label>
+                            <label>
+                                <input class="form_check" id="formCheck" name="field_check" type="checkbox">
+                                Отправляя заявку, я
+                                соглашаюсь на <a href="/privacy-policy">обработку моих персональных данных</a>
+                            </label>
+                            <input class="btn" type="submit" value="Отправить">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="underline">
+            <div class="container">
+                <div class="lower_part">
+                    <p>Copyright &copy; Initlab, LLC <br> Drupal is a registered trademark of Dries Buytaert.</p>
+                </div>
+            </div>
+        </div>
+        <img class="footer_paw paw1" src="img/right_paw.png" alt="paw" />
+        <img class="footer_paw paw2" src="img/right_paw.png" alt="paw" />
+    </footer>
 </body>
 
 </html>
